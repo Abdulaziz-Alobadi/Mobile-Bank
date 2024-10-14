@@ -27,6 +27,7 @@
 PRG="$0"
 # Need this for relative symlinks.
 chmod +x gradlew
+./gradlew wrapper --gradle-version X.X.X
 while [ -h "$PRG" ] ; do
     ls=`ls -ld "$PRG"`
     link=`expr "$ls" : '.*-> \(.*\)$'`
