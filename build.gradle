@@ -1,6 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:'3.5.1'
     id("com.google.gms.google-services") version "4.4.2" apply false
 alias(libs.plugins.android.application) apply false
 }
