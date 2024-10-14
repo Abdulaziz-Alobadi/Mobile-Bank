@@ -26,9 +26,6 @@
 # Resolve links: $0 may be a link
 PRG="$0"
 # Need this for relative symlinks.
-chmod +x gradlew
-ls -l gradlew  # Check current permissions
-chmod +x gradlew  # Set executable permission
 while [ -h "$PRG" ] ; do
     ls=`ls -ld "$PRG"`
     link=`expr "$ls" : '.*-> \(.*\)$'`
@@ -186,4 +183,3 @@ APP_ARGS=`save "$@"`
 eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "\"-Dorg.gradle.appname=$APP_BASE_NAME\"" -classpath "\"$CLASSPATH\"" org.gradle.wrapper.GradleWrapperMain "$APP_ARGS"
 
 exec "$JAVACMD" "$@"
-
