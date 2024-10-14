@@ -19,9 +19,6 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: gradle
-    - name: Install Espresso Core
-      run: |
-       echo "androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'" >> app/build.gradle
     - name: Grant execute permission to gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
